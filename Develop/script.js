@@ -1,5 +1,8 @@
 // Assignment code here
 
+var length = prompt("Select length of password between 8-128 characters.");
+
+var characterType = prompt("Enter at least 1 character type: lowercase, uppercase, numeric, special character (! @ # $ % *).");
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
@@ -13,10 +16,11 @@ function writePassword() {
 }
 
 // Add event listener to generate button
-document.querySelector('#generate.btn').addEventListener('click', pwCriteria);
+document.querySelector('#generate.btn').addEventListener('click', generatedPassword);
 
-function pwCriteria() {
-  window.alert("Select criteria for password");
+function generatedPassword() {
+  window.alert(" Your password is " + " . ");
 }
+
 
 
