@@ -1,6 +1,5 @@
 // Assignment code here
 
-
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
@@ -14,4 +13,10 @@ function writePassword() {
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+document.querySelector('#generate.btn').addEventListener('click', pwCriteria);
+
+function pwCriteria() {
+  window.alert("Select criteria for password");
+}
+
+
